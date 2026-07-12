@@ -1,3 +1,4 @@
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,23 +31,18 @@
   }
   h1,h2,h3{font-family:'Georgia', serif; letter-spacing:0.5px;}
   a{text-decoration:none;color:inherit;}
-
-  /* NAV */
   nav{
     position:fixed; top:0; left:0; right:0; z-index:100;
     display:flex; justify-content:space-between; align-items:center;
     padding:18px 6%;
     background:rgba(10,17,40,0.85);
     backdrop-filter:blur(10px);
-    transition:padding 0.3s ease;
   }
   nav .logo{color:var(--gold); font-size:1.3rem; font-weight:bold; letter-spacing:2px;}
   nav .links{display:flex; gap:28px;}
   nav .links a{color:#e8e8f0; font-size:0.92rem; letter-spacing:0.5px; transition:color 0.25s;}
   nav .links a:hover{color:var(--gold);}
   .nav-toggle{display:none; color:var(--gold); font-size:1.6rem; cursor:pointer; background:none; border:none;}
-
-  /* HERO */
   header.hero{
     min-height:100vh;
     display:flex; align-items:center; justify-content:center;
@@ -74,100 +70,52 @@
     display:flex; align-items:center; justify-content:center;
     font-size:3.4rem; color:var(--gold);
     box-shadow:0 0 0 8px rgba(201,168,106,0.08), 0 20px 50px rgba(0,0,0,0.4);
-    animation:fadeDown 1s ease both;
     overflow:hidden;
   }
-  .hero-portrait img{width:100%; height:100%; object-fit:cover; border-radius:50%;}
-
-  /* SUBMIT / UPLOAD FORM */
-  #submit{background:var(--cream);}
-  .form-wrap{
-    background:#fff; border:1px solid #e8e4d8; border-radius:18px;
-    padding:44px 34px; box-shadow:0 12px 30px rgba(10,17,40,0.06);
-  }
-  .form-row{margin-bottom:22px; display:flex; flex-direction:column; gap:8px;}
-  .form-row label{font-size:0.85rem; font-weight:bold; color:var(--navy); letter-spacing:0.5px;}
-  .form-row input[type="text"],
-  .form-row input[type="email"],
-  .form-row select,
-  .form-row textarea{
-    padding:13px 16px; border:1px solid #d9d4c6; border-radius:10px;
-    font-family:inherit; font-size:0.98rem; background:var(--cream); color:var(--text-dark);
-    transition:border-color 0.25s;
-  }
-  .form-row input:focus, .form-row select:focus, .form-row textarea:focus{
-    outline:none; border-color:var(--royal);
-  }
-  .form-row textarea{resize:vertical; min-height:120px;}
-  .file-row{
-    display:flex; align-items:center; gap:14px; padding:14px 16px;
-    border:1px dashed #c9c4b6; border-radius:10px; background:var(--cream);
-  }
-  .file-row input[type="file"]{font-size:0.85rem; max-width:100%;}
-  .form-hint{font-size:0.82rem; color:#9ca3af; margin-top:4px;}
-  .submit-btn{
-    background:var(--navy); color:#fff; border:none; padding:15px 40px;
-    border-radius:40px; font-size:0.98rem; font-weight:bold; letter-spacing:0.5px;
-    cursor:pointer; transition:all 0.3s ease;
-  }
-  .submit-btn:hover{background:var(--royal); transform:translateY(-3px); box-shadow:0 10px 24px rgba(30,64,175,0.3);}
-  @keyframes fadeDown{from{opacity:0; transform:translateY(-24px);} to{opacity:1; transform:translateY(0);}}
+  .hero-portrait img{width:100%; height:100%; object-fit:cover; object-position:center 15%; border-radius:50%;}
   header.hero .brand{
     font-size:clamp(2.6rem, 6vw, 4.2rem);
     letter-spacing:4px; font-weight:700;
     background:linear-gradient(90deg,#fff,var(--gold),#fff);
     -webkit-background-clip:text; background-clip:text; color:transparent;
-    animation:fadeUp 1s ease 0.15s both;
   }
   header.hero .tagline{
     margin-top:14px; font-size:clamp(1.05rem,2.4vw,1.4rem);
     font-style:italic; color:#dfe3f0;
-    animation:fadeUp 1s ease 0.3s both;
   }
   header.hero .desc{
     max-width:640px; margin:26px auto 0; font-size:1.02rem; line-height:1.75; color:#c9cee0;
-    animation:fadeUp 1s ease 0.45s both;
   }
-  @keyframes fadeUp{from{opacity:0; transform:translateY(24px);} to{opacity:1; transform:translateY(0);}}
-  .hero-btns{margin-top:38px; display:flex; gap:18px; justify-content:center; flex-wrap:wrap; animation:fadeUp 1s ease 0.6s both;}
+  .hero-btns{margin-top:38px; display:flex; gap:18px; justify-content:center; flex-wrap:wrap;}
   .btn{
     padding:14px 32px; border-radius:40px; font-size:0.95rem; letter-spacing:0.5px;
     cursor:pointer; transition:all 0.3s ease; border:2px solid transparent; display:inline-block;
   }
   .btn-primary{background:var(--gold); color:var(--navy); font-weight:bold;}
-  .btn-primary:hover{background:#e0c48a; transform:translateY(-3px); box-shadow:0 10px 25px rgba(201,168,106,0.35);}
+  .btn-primary:hover{background:#e0c48a;}
   .btn-outline{border-color:rgba(255,255,255,0.5); color:#fff;}
-  .btn-outline:hover{background:rgba(255,255,255,0.1); border-color:#fff; transform:translateY(-3px);}
-
+  .btn-outline:hover{background:rgba(255,255,255,0.1); border-color:#fff;}
   section{padding:100px 6%; max-width:1100px; margin:0 auto;}
   .eyebrow{color:var(--royal); text-transform:uppercase; font-size:0.8rem; letter-spacing:3px; font-weight:bold; margin-bottom:10px;}
   .section-title{font-size:clamp(1.8rem,4vw,2.6rem); margin-bottom:20px; color:var(--navy);}
   .section-lead{font-size:1.1rem; color:#4b5563; max-width:700px; line-height:1.7; margin-bottom:50px;}
-
-  /* ABOUT */
   #about{background:#fff;}
   .about-grid{display:grid; grid-template-columns:1fr; gap:40px;}
   .about-grid p{font-size:1.05rem; line-height:1.85; color:#374151; margin-bottom:18px;}
-
-  /* SERVICES */
   #services{background:var(--cream);}
   .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:28px;}
   .card{
     background:#fff; padding:36px 30px; border-radius:16px;
     border:1px solid #e8e4d8; box-shadow:0 8px 24px rgba(10,17,40,0.05);
-    transition:transform 0.35s ease, box-shadow 0.35s ease;
     position:relative; overflow:hidden;
   }
   .card::before{
     content:""; position:absolute; top:0; left:0; width:5px; height:100%;
     background:linear-gradient(var(--royal),var(--gold));
   }
-  .card:hover{transform:translateY(-8px); box-shadow:0 20px 40px rgba(10,17,40,0.12);}
   .card .num{font-size:0.85rem; color:var(--gold); font-weight:bold; letter-spacing:2px;}
   .card h3{margin:12px 0 14px; font-size:1.3rem; color:var(--navy);}
   .card p{color:#4b5563; line-height:1.7; font-size:0.98rem;}
-
-  /* AUDIENCE */
   #audience{background:var(--navy); color:#fff;}
   #audience .eyebrow{color:var(--gold);}
   #audience .section-title{color:#fff;}
@@ -175,47 +123,38 @@
   .audience-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:24px;}
   .audience-card{
     background:rgba(255,255,255,0.05); border:1px solid rgba(201,168,106,0.25);
-    border-radius:14px; padding:30px; transition:background 0.3s ease;
+    border-radius:14px; padding:30px;
   }
-  .audience-card:hover{background:rgba(255,255,255,0.09);}
   .audience-card h3{color:var(--gold); margin-bottom:10px; font-size:1.15rem;}
   .audience-card p{color:#c9cee0; line-height:1.65; font-size:0.95rem;}
-
-  /* QUOTE */
   #quote{background:linear-gradient(135deg, var(--royal), var(--navy)); color:#fff; text-align:center;}
   #quote blockquote{
     font-size:clamp(1.2rem,3vw,1.7rem); font-style:italic; line-height:1.6; max-width:800px; margin:0 auto 20px;
   }
   #quote cite{color:var(--gold); font-style:normal; font-weight:bold; letter-spacing:1px;}
-
-  /* CONTACT */
   #contact{background:#fff;}
   .contact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px; margin-bottom:50px;}
   .contact-card{
     display:flex; align-items:center; gap:16px;
     padding:26px; border-radius:14px; border:1px solid #e8e4d8;
-    background:var(--cream); transition:all 0.3s ease;
+    background:var(--cream);
   }
-  .contact-card:hover{border-color:var(--gold); transform:translateY(-4px); box-shadow:0 12px 24px rgba(10,17,40,0.08);}
   .contact-icon{
     width:48px; height:48px; border-radius:50%; background:var(--navy); color:var(--gold);
     display:flex; align-items:center; justify-content:center; font-size:1.4rem; flex-shrink:0;
   }
   .contact-card .label{font-size:0.8rem; text-transform:uppercase; letter-spacing:1px; color:#9ca3af;}
   .contact-card .value{font-size:1.02rem; font-weight:bold; color:var(--navy); word-break:break-word;}
-
   .info-strip{
     display:flex; flex-wrap:wrap; gap:40px; justify-content:center; text-align:center;
     padding-top:40px; border-top:1px solid #eee;
   }
   .info-strip div .label{color:var(--royal); font-size:0.8rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:6px;}
   .info-strip div .value{color:var(--navy); font-weight:bold; font-size:1.05rem;}
-
   footer{
     background:var(--navy); color:#8993b3; text-align:center; padding:36px 6%; font-size:0.85rem;
   }
   footer strong{color:var(--gold);}
-
   @media (max-width:720px){
     nav .links{
       position:fixed; top:64px; right:0; background:var(--navy);
@@ -230,7 +169,6 @@
 </style>
 </head>
 <body>
-
 <nav>
   <div class="logo">HEALINGZION</div>
   <button class="nav-toggle" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
@@ -359,4 +297,54 @@
     <a class="contact-card" href="https://wa.me/2349156455594" target="_blank" rel="noopener">
       <div class="contact-icon">✆</div>
       <div>
-        <div class="label">What
+        <div class="label">WhatsApp</div>
+        <div class="value">0915 645 5594</div>
+      </div>
+    </a>
+    <a class="contact-card" href="mailto:oyibooyoma@gmail.com">
+      <div class="contact-icon">✉</div>
+      <div>
+        <div class="label">Email</div>
+        <div class="value">oyibooyoma@gmail.com</div>
+      </div>
+    </a>
+    <a class="contact-card" href="tel:+2349156455594">
+      <div class="contact-icon">☎</div>
+      <div>
+        <div class="label">Phone</div>
+        <div class="value">0915 645 5594</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="info-strip">
+    <div>
+      <div class="label">Based In</div>
+      <div class="value">Effurun, Delta State, Nigeria</div>
+    </div>
+    <div>
+      <div class="label">Book Sessions</div>
+      <div class="value">Monday – Friday</div>
+    </div>
+    <div>
+      <div class="label">Open Hours</div>
+      <div class="value">8:00 AM – 5:00 PM</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 <strong>Healingzion</strong> — Inspiring Souls. Managing What Matters.</p>
+</footer>
+
+<script>
+  function closeMenu(){document.querySelector('.links').classList.remove('open');}
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const target=document.querySelector(a.getAttribute('href'));
+      if(target){e.preventDefault(); target.scrollIntoView({behavior:'smooth'});}
+    });
+  });
+</script>
+</body>
+</html>
