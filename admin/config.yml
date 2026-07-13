@@ -1,5 +1,5 @@
 backend:
-  git-gateway
+  name: git-gateway
   repo: Healingzion/Healinzion-site
   branch: main
 
@@ -20,15 +20,3 @@ collections:
     folder: "content/photos"
     create: true
     slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-  - name: "audio"
-    label: "Audio"
-    folder: "content/audio"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Audio File", name: "audiofile", widget: "file"}
-      
