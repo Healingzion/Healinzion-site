@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway.
+  git-gateway
   repo: Healingzion/Healinzion-site
   branch: main
 
@@ -31,3 +31,4 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Audio File", name: "audiofile", widget: "file"}
+      
