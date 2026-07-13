@@ -23,4 +23,160 @@ nav .logo{color:var(--gold);font-size:1.3rem;font-weight:bold;letter-spacing:2px
 nav .links{display:flex;gap:28px;}
 nav .links a{color:#e8e8f0;font-size:0.92rem;letter-spacing:0.5px;}
 .nav-toggle{display:none;color:var(--gold);font-size:1.6rem;cursor:pointer;background:none;border:none;}
-header.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background:radial-gradient(ellipse at top, rgba(59,91,219,0.35), transparent 60%),linear-gradient(160deg, var(--navy) 0%, #111c40 45%, var(--royal) 130%);
+header.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;background:radial-gradient(ellipse at top, rgba(59,91,219,0.35), transparent 60%),linear-gradient(160deg, var(--navy) 0%, #111c40 45%, var(--royal) 130%);color:#fff;padding:120px 6% 80px;overflow:hidden;}
+.hero-portrait{width:190px;height:190px;border-radius:50%;margin:0 auto 28px;background:linear-gradient(135deg, var(--royal-light), var(--navy));border:3px solid var(--gold);display:flex;align-items:center;justify-content:center;font-size:3.4rem;color:var(--gold);overflow:hidden;}
+.hero-portrait img{width:100%;height:100%;object-fit:cover;object-position:center 15%;border-radius:50%;}
+header.hero .brand{font-size:clamp(2.6rem, 6vw, 4.2rem);letter-spacing:4px;font-weight:700;background:linear-gradient(90deg,#fff,var(--gold),#fff);-webkit-background-clip:text;background-clip:text;color:transparent;}
+header.hero .tagline{margin-top:14px;font-size:clamp(1.05rem,2.4vw,1.4rem);font-style:italic;color:#dfe3f0;}
+header.hero .desc{max-width:640px;margin:26px auto 0;font-size:1.02rem;line-height:1.75;color:#c9cee0;}
+.hero-btns{margin-top:38px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+.btn{padding:14px 32px;border-radius:40px;font-size:0.95rem;letter-spacing:0.5px;cursor:pointer;border:2px solid transparent;display:inline-block;}
+.btn-primary{background:var(--gold);color:var(--navy);font-weight:bold;}
+.btn-outline{border-color:rgba(255,255,255,0.5);color:#fff;}
+section{padding:100px 6%;max-width:1100px;margin:0 auto;}
+.eyebrow{color:var(--royal);text-transform:uppercase;font-size:0.8rem;letter-spacing:3px;font-weight:bold;margin-bottom:10px;}
+.section-title{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:20px;color:var(--navy);}
+.section-lead{font-size:1.1rem;color:#4b5563;max-width:700px;line-height:1.7;margin-bottom:50px;}
+#about{background:#fff;}
+.about-grid{display:grid;grid-template-columns:1fr;gap:40px;}
+.about-grid p{font-size:1.05rem;line-height:1.85;color:#374151;margin-bottom:18px;}
+#services{background:var(--cream);}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;}
+.card{background:#fff;padding:36px 30px;border-radius:16px;border:1px solid #e8e4d8;position:relative;overflow:hidden;}
+.card::before{content:"";position:absolute;top:0;left:0;width:5px;height:100%;background:linear-gradient(var(--royal),var(--gold));}
+.card .num{font-size:0.85rem;color:var(--gold);font-weight:bold;letter-spacing:2px;}
+.card h3{margin:12px 0 14px;font-size:1.3rem;color:var(--navy);}
+.card p{color:#4b5563;line-height:1.7;font-size:0.98rem;}
+#audience{background:var(--navy);color:#fff;}
+#audience .eyebrow{color:var(--gold);}
+#audience .section-title{color:#fff;}
+#audience .section-lead{color:#c9cee0;}
+.audience-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;}
+.audience-card{background:rgba(255,255,255,0.05);border:1px solid rgba(201,168,106,0.25);border-radius:14px;padding:30px;}
+.audience-card h3{color:var(--gold);margin-bottom:10px;font-size:1.15rem;}
+.audience-card p{color:#c9cee0;line-height:1.65;font-size:0.95rem;}
+#quote{background:linear-gradient(135deg, var(--royal), var(--navy));color:#fff;text-align:center;}
+#quote blockquote{font-size:clamp(1.2rem,3vw,1.7rem);font-style:italic;line-height:1.6;max-width:800px;margin:0 auto 20px;}
+#quote cite{color:var(--gold);font-style:normal;font-weight:bold;letter-spacing:1px;}
+#contact{background:#fff;}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-bottom:50px;}
+.contact-card{display:flex;align-items:center;gap:16px;padding:26px;border-radius:14px;border:1px solid #e8e4d8;background:var(--cream);}
+.contact-icon{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;}
+.contact-card .label{font-size:0.8rem;text-transform:uppercase;letter-spacing:1px;color:#9ca3af;}
+.contact-card .value{font-size:1.02rem;font-weight:bold;color:var(--navy);word-break:break-word;}
+.info-strip{display:flex;flex-wrap:wrap;gap:40px;justify-content:center;text-align:center;padding-top:40px;border-top:1px solid #eee;}
+.info-strip div .label{color:var(--royal);font-size:0.8rem;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px;}
+.info-strip div .value{color:var(--navy);font-weight:bold;font-size:1.05rem;}
+footer{background:var(--navy);color:#8993b3;text-align:center;padding:36px 6%;font-size:0.85rem;}
+footer strong{color:var(--gold);}
+@media (max-width:720px){nav .links{position:fixed;top:64px;right:0;background:var(--navy);flex-direction:column;width:220px;padding:20px;transform:translateX(100%);border-radius:0 0 0 12px;}nav .links.open{transform:translateX(0);}.nav-toggle{display:block;}section{padding:70px 6%;}}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo">HEALINGZION</div>
+<button class="nav-toggle" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<div class="links">
+<a href="#about" onclick="closeMenu()">About</a>
+<a href="#services" onclick="closeMenu()">What I Do</a>
+<a href="#audience" onclick="closeMenu()">Who I Work With</a>
+<a href="#content" onclick="closeMenu()">My Content</a>
+<a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+</nav>
+<header class="hero">
+<div>
+<div class="hero-portrait">
+<img src="https://i.ibb.co/HfDPwg6t/index-html-1.jpg" alt="Healingzion portrait" onerror="this.style.display='none'; this.parentElement.textContent='HZ';">
+</div>
+<h1 class="brand">HEALINGZION</h1>
+<p class="tagline">Inspiring souls. Managing what matters.</p>
+<p class="desc">I help individuals find clarity and purpose, bring order to businesses and companies through hands-on management, and offer professional therapy through facial treatments and body massage.</p>
+<div class="hero-btns">
+<a href="#contact" class="btn btn-primary">Start a Conversation</a>
+<a href="#services" class="btn btn-outline">See What I Do</a>
+</div>
+</div>
+</header>
+<section id="about">
+<div class="eyebrow">About</div>
+<h2 class="section-title">A Manager, an Inspiring Personality, and a Professional Therapist</h2>
+<div class="about-grid">
+<p><strong>1. A Manager</strong><br>A manager is a person who plans, organizes, directs, and controls the activities of an organization or group in order to achieve specific goals. A manager ensures that available resources such as people, money, time, and materials are used effectively and efficiently. The purpose of a manager is to provide leadership, coordinate teamwork, make sound decisions, solve problems, and ensure that organizational objectives are achieved successfully.</p>
+<p><strong>2. An Inspiring Personality</strong><br>An inspiring personality is someone whose character, attitude, words, and actions motivate others to become better versions of themselves. Such a person influences people positively through integrity, courage, discipline, compassion, and determination. The purpose of an inspiring personality is to encourage hope, build confidence, promote positive values, and empower others to overcome challenges and pursue excellence in their personal, academic, professional, and spiritual lives.</p>
+<p><strong>3. A Professional Therapist</strong><br>A professional therapist is a trained specialist who helps individuals, couples, families, or groups cope with emotional, psychological, behavioural, or relationship challenges. Through counselling, guidance, and evidence-based therapeutic techniques, a therapist assists people in improving their mental and emotional well-being. The purpose of a professional therapist is to provide emotional support, promote healing, develop healthy coping skills, improve relationships, and help individuals achieve a balanced and fulfilling life.</p>
+<p><strong>Conclusion</strong><br>Although these three roles are different, they all contribute to the growth and well-being of individuals and society. A manager promotes organizational success, an inspiring personality motivates positive change, and a professional therapist supports emotional and mental wellness. Together, they play vital roles in building productive, healthy, and successful communities.</p>
+</div>
+</section>
+<section id="services">
+<div class="eyebrow">What I Do</div>
+<h2 class="section-title">Three roles, held together with the same care</h2>
+<div class="cards">
+<div class="card"><div class="num">01</div><h3>Inspiring Souls</h3><p>Mentorship, coaching, and speaking that helps individuals reconnect with purpose, direction, and the confidence to move forward.</p></div>
+<div class="card"><div class="num">02</div><h3>Specialized Management</h3><p>A steady, resourceful technique for sorting out challenges and bringing solutions — for individuals, businesses, and companies alike.</p></div>
+<div class="card"><div class="num">03</div><h3>Professional Therapy</h3><p>Specialized in body massage, facial treatment, and body fitness.</p></div>
+</div>
+</section>
+<section id="audience">
+<div class="eyebrow">Who I Work With</div>
+<h2 class="section-title">Support tailored to where you are</h2>
+<p class="section-lead">Whether you're a person, a growing business, or an established company — the support meets you where you are.</p>
+<div class="audience-grid">
+<div class="audience-card"><h3>Individuals</h3><p>Personal mentorship and management support for people navigating growth, transition, or direction.</p></div>
+<div class="audience-card"><h3>Businesses</h3><p>Management guidance for growing businesses that need steadier structure behind the scenes.</p></div>
+<div class="audience-card"><h3>Companies</h3><p>Specialized management support for companies looking to bring order and clarity to how they operate.</p></div>
+</div>
+</section>
+<section id="content">
+<div class="eyebrow">My Content</div>
+<h2 class="section-title">Write-ups, photos & audio</h2>
+<p class="section-lead">A space to share reflections, moments, and voice notes with you.</p>
+<h3 style="margin-bottom:20px; color:var(--navy); font-size:1.3rem;">📝 Write-ups</h3>
+<div class="cards" style="margin-bottom:60px;">
+<div class="card">
+<h3>Business Registration & Management in Nigeria</h3>
+<p>Management is the process of planning, organizing, directing, and controlling the resources and activities of a business to achieve its objectives efficiently and effectively. For a business to operate legally in Nigeria, it must be registered and regulated under the appropriate laws.</p>
+<p>The principal law governing the registration and operation of companies in Nigeria is the Companies and Allied Matters Act (CAMA) 2020. This Act provides the legal framework for the formation, registration, management, and winding up of companies, business names, and incorporated trustees. It is administered by the Corporate Affairs Commission (CAC), which is responsible for registering businesses and ensuring compliance with the law.</p>
+<p><strong>Under CAMA, the major forms of business registration include:</strong></p>
+<p>Business Name (Sole Proprietorship or Partnership); Private Company Limited by Shares (Ltd); Public Limited Company (PLC); Company Limited by Guarantee; Incorporated Trustees (for churches, NGOs, clubs, and associations).</p>
+<p><strong>Other laws that regulate businesses in Nigeria include:</strong> the Constitution of the Federal Republic of Nigeria 1999 (as amended); the Federal Inland Revenue Service (Establishment) Act; the Personal Income Tax Act and Companies Income Tax Act; the Value Added Tax (VAT) Act; the Labour Act; the Nigerian Investment Promotion Commission (NIPC) Act; and industry-specific laws for sectors such as banking, insurance, telecommunications, and oil and gas.</p>
+<p>Business registration provides legal recognition, enhances credibility, protects the business name, enables access to loans and government contracts, and ensures compliance with Nigerian laws. Every entrepreneur should register and manage their business in accordance with the relevant legal provisions to promote sustainable growth and avoid legal sanctions.</p>
+</div>
+</div>
+<h3 style="margin-bottom:20px; color:var(--navy); font-size:1.3rem;">📷 Photos</h3>
+<div class="cards" style="margin-bottom:60px;">
+<div class="card" style="padding:0; overflow:hidden;"><img src="gallery1.jpg" alt="Abstract art" style="width:100%; height:220px; object-fit:cover; display:block;" onerror="this.parentElement.style.display='none';"></div>
+<div class="card" style="padding:0; overflow:hidden;"><img src="zspa.jpg" alt="Zion Spa & Therapy Banquet" style="width:100%; height:220px; object-fit:cover; display:block;" onerror="this.parentElement.style.display='none';"></div>
+</div>
+<h3 style="margin-bottom:20px; color:var(--navy); font-size:1.3rem;">🎧 Audio</h3>
+<div class="cards">
+<div class="card" style="display:flex; align-items:center; justify-content:center; min-height:100px; color:#9ca3af; font-style:italic;">Audio messages will appear here</div>
+</div>
+</section>
+<section id="quote">
+<blockquote>"A divine technique for sorting out challenges and bringing solutions, a divine touch for facial treatment and body massage, and an inspiring voice through it all."</blockquote>
+— Healingzion
+</section>
+<section id="contact">
+<div class="eyebrow">Let's Talk</div>
+<h2 class="section-title">Individual, business, company, or a therapy session — reach out by DM</h2>
+<div class="contact-grid">
+<a class="contact-card" href="https://wa.me/2349156455594" target="_blank" rel="noopener"><div class="contact-icon">✆</div><div><div class="label">WhatsApp</div><div class="value">0915 645 5594</div></div></a>
+<a class="contact-card" href="mailto:oyibooyoma@gmail.com"><div class="contact-icon">✉</div><div><div class="label">Email</div><div class="value">oyibooyoma@gmail.com</div></div></a>
+<a class="contact-card" href="tel:+2349156455594"><div class="contact-icon">☎</div><div><div class="label">Phone</div><div class="value">0915 645 5594</div></div></a>
+</div>
+<div class="info-strip">
+<div><div class="label">Based In</div><div class="value">Effurun, Delta State, Nigeria</div></div>
+<div><div class="label">Book Sessions</div><div class="value">Monday – Friday</div></div>
+<div><div class="label">Open Hours</div><div class="value">8:00 AM – 5:00 PM</div></div>
+</div>
+</section>
+<footer>
+<p>&copy; 2026 <strong>Healingzion</strong> — Inspiring Souls. Managing What Matters.</p>
+</footer>
+<script>
+function closeMenu(){document.querySelector('.links').classList.remove('open');}
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const target=document.querySelector(a.getAttribute('href'));if(target){e.preventDefault(); target.scrollIntoView({behavior:'smooth'});}});});
+</script>
+</body>
+</html>
