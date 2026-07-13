@@ -19,4 +19,6 @@ collections:
     label: "Photos"
     folder: "content/photos"
     create: true
-    slug: "{{slug}}"
+    slug: "{{slug}}"fields:
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Caption", name: "caption", widget: "string", required: false}
