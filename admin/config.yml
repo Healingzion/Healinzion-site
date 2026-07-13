@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: Healingzion/Healinzion-site
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "writeups"
+    label: "Write-ups"
+    folder: "content/writeups"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "photos"
+    label: "Photos"
+    folder: "content/photos"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+  - name: "audio"
+    label: "Audio"
+    folder: "content/audio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Audio File", name: "audiofile", widget: "file"}
