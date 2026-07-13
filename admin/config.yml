@@ -22,3 +22,4 @@ collections:
     slug: "{{slug}}"fields:
       - {label: "Photo", name: "photo", widget: "image"}
       - {label: "Caption", name: "caption", widget: "string", required: false}
+      
